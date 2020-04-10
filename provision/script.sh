@@ -6,5 +6,3 @@ sudo git --version
 sudo git config --global user.name "Flavio Lima"
 sudo git config --global user.email "flaviolima.s@live.com"
 sudo git config -l
-cd /vagrant/
-git pull origin master
