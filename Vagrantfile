@@ -15,7 +15,8 @@ Vagrant.configure("2") do |config|
   # config.vm.box = "ubuntu/trusty64"
   config.vm.box = "centos/7"
   config.vm.provision "shell", path: "provision/script.sh"
-  config.vm.synced_folder "./", "/home/vagrant/programacao-shell/", create: true
+  config.vm.synced_folder "./", "/home/vagrant/programacao-shell/", create: true,
+  mount_options: ["dmode=775,fmode=777"]
   # Disable automatic box update checking. If you disable this, then
   # boxes will only be checked for updates when the user runs
   # `vagrant box outdated`. This is not recommended.
