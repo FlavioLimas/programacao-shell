@@ -6,3 +6,8 @@ sudo git --version
 sudo git config -l
 cd /home/vagrant/programacao-shell/
 git remote -v
+
+# Comandos para fazer o update no centos ao subir a VM no vagrant
+# sudo dnf clean all
+# sudo rm -r /var/cache/dnf
+# sudo dnf upgrade
