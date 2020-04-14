@@ -12,7 +12,8 @@ Vagrant.configure("2") do |config|
 
   # Every Vagrant development environment requires a box. You can search for
   # boxes at https://vagrantcloud.com/search.
-  config.vm.box = "ubuntu/trusty64"
+  # config.vm.box = "ubuntu/trusty64"
+  config.vm.box = "centos/7"
   config.vm.provision "shell", path: "provision/script.sh"
   config.vm.synced_folder "./", "/home/vagrant/programacao-shell/", create: true
   # Disable automatic box update checking. If you disable this, then
