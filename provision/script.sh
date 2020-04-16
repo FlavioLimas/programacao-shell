@@ -12,3 +12,5 @@ sudo dnf clean all
 sudo rm -r /var/cache/dnf
 sudo dnf -y upgrade
 sudo yum -y install git
+sudo git config --global user.name "Flavio Lima"
+sudo git config --global user.email "flaviolima.s@live.com"
