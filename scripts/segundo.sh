@@ -11,4 +11,4 @@ pwd
 #Atribuindo uma data a variavel date
 
 DATA=$(date +%d-%m-%y)
-echo ${DATA}
+touch arquivo-${DATA}.txt
