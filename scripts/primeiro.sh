@@ -1,6 +1,6 @@
 #!/bin/bash
 NOME="bia"
-echo "ola ${NOME}"
+echo "ola $NOMEzinha"
 NOME="vivek"
 echo "ola ${NOME}"
 
