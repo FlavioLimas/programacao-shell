@@ -15,6 +15,7 @@ Vagrant.configure("2") do |config|
   # config.vm.box = "ubuntu/trusty64"
   config.vm.box = "centos/7"
   config.vm.provision "shell", path: "provision/script.sh"
+  config.vm.provision "shell", path: "provision/config.sh"
   config.vm.synced_folder "./", "/home/vagrant/programacao-shell/", create: true,
   mount_options: ["dmode=775,fmode=777"]
   # Disable automatic box update checking. If you disable this, then
