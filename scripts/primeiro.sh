@@ -1,4 +1,9 @@
 #!/bin/bash
+#
+#Esse primeiro programa para mostrar conceitos basicos
+#
+#uso: ./primeiro.sh
+
 NOME="bia"
 echo "ola $NOME zinha"
 NOME="vivek"
