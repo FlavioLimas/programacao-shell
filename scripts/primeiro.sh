@@ -1,2 +1,4 @@
 #!/bin/bash
-echo "ola mundo"
+NOME="bia"
+echo "ola ${NOME}"
+
