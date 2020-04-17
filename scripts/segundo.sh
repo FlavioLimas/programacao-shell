@@ -7,3 +7,8 @@ cd /tmp
 touch arquivo1
 ls -l /tmp/arquivo1
 pwd
+
+#Atribuindo uma data a variavel date
+
+DATA=$(date +%m-%y)
+echo ${DATA}
