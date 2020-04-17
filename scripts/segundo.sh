@@ -10,5 +10,5 @@ pwd
 
 #Atribuindo uma data a variavel date
 
-DATA=$(date +%m-%y)
+DATA=$(date +%d-%m-%y)
 echo ${DATA}
