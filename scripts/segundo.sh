@@ -11,4 +11,5 @@ pwd
 #Atribuindo uma data a variavel date
 
 DATA=$(date +%d-%m-%y)
+cd ~/programacao-shell/scripts/
 touch arquivo-${DATA}.txt
