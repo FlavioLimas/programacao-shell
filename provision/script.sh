@@ -12,3 +12,11 @@ sudo dnf clean all
 sudo rm -r /var/cache/dnf
 sudo dnf -y upgrade
 sudo yum -y install git
+
+#instalando servidor apache
+sudo yum -y install httpd
+sudo systemctl enable httpd
+sudo systemctl start firewalld
+sudo systemctl enable firewalld
+sudo firewall-cmd --permanent --add-service=http
+sudo firewall-cmd --list-all
