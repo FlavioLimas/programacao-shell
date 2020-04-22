@@ -13,7 +13,7 @@ sudo rm -r /var/cache/dnf
 sudo dnf -y upgrade
 sudo yum -y install git
 
-#instalando servidor apache
+#instalando servidor apache centOS 7
 sudo yum -y install httpd
 sudo systemctl enable httpd
 sudo systemctl start firewalld
