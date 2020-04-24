@@ -12,7 +12,12 @@ sudo systemctl enable httpd
 
 #Iniciar o servico do servidor apache apos instalacao
 
-#sudo systemctl start httpd
+sudo systemctl start httpd
+
+#Atribuindo permisao ao diretorio
+
+sudo chown vagrant /var/www/html/
+chmod +w /var/www/html/
 
 echo "Meu primeiro site" > /var/www/html/index.html
 
@@ -23,4 +28,4 @@ echo "Meu primeiro site" > /var/www/html/index.html
 sudo firewall-cmd --permanent --add-service=http
 
 #Reiniciando o Apache
-#sudo firewall-cmd --relaod
+sudo firewall-cmd --relaod
