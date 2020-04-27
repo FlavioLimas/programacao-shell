@@ -10,6 +10,7 @@ sudo echo "LANG="pt_BR.UTF-8"" > /etc/locale.conf
 # Comandos para fazer o update no centos ao subir a VM no vagrant
 sudo dnf clean all
 sudo rm -r /var/cache/dnf
+sudo dnf -y update
 sudo dnf -y upgrade
 sudo yum -y install git
 
