@@ -18,7 +18,8 @@ sudo dnf -y upgrade
 sudo yum -y install git
 
 #instalando servidor apache centOS 7
-sudo yum -y install httpd
+# sudo yum -y install httpd
+sudo yum -y group install "Web Server"
 sudo systemctl enable httpd
 sudo systemctl start firewalld
 sudo systemctl enable firewalld
