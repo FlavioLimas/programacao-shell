@@ -2,7 +2,7 @@
 
 #simples exemplo de laço for loop
 
-for i in {11..20}
+for i in {a..f}
 do
 	echo "Numero da vez sera: ${i}"
 done
