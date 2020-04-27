@@ -11,7 +11,7 @@ sudo echo "LANG="pt_BR.UTF-8"" > /etc/locale.conf
 sudo dnf clean all
 sudo rm -r /var/cache/dnf
 sudo dnf -y upgrade
-sudo yum -y date
+sudo yum -y update
 sudo yum -y install git
 
 #instalando servidor apache centOS 7
