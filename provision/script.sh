@@ -8,7 +8,7 @@ sudo echo "LANG="pt_BR.UTF-8"" > /etc/locale.conf
 # git remote -v
 
 # Comandos para fazer o update no centos ao subir a VM no vagrant
-sudo yum -y install epel-release wget-y
+sudo dhclient
 sudo yum -y update
 sudo yum-config-manager --add-repo http://vault.centos.org/7.7.1908/os/Source/repodata/repomd.xml
 sudo yum -y install dnf
