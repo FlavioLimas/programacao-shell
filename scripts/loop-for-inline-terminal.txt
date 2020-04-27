@@ -1,0 +1,18 @@
+#cria o grupo dev
+groupadd dev
+#lista todos os usuarios
+cat /etc/passwd | cut -d: -f1
+#laço for inline no terminal criando os usuarios e o grupo dev e atribuindo os respectivos usuarios ao grupo
+for i in tina bob bia;do adduser -G dev ${i};done
+#listando usuarios criados
+cat /etc/passwd | cut -d: -f1
+#imprime os ultimos 10 numeros do arquivo informado
+tail /etc/passwd
+#procura dev no arquivo informado
+grep dev /etc/group
+#add o user vagrant no grupo existente
+gpasswd -a vagrant dev
+#serch dev no file informado
+grep dev /etc/group
+#redirecionado o resultado no history para o arquivo informado
+history > /home/vagrant/programacao-shell/scripts/loop-for-inline-terminal.txt
