@@ -8,10 +8,11 @@ sudo echo "LANG="pt_BR.UTF-8"" > /etc/locale.conf
 # git remote -v
 
 # Comandos para fazer o update no centos ao subir a VM no vagrant
+sudo yum -y install dnf
 sudo dnf clean all
 sudo rm -r /var/cache/dnf
-sudo yum-config-manager --disable C7.7.1908
 sudo dnf -y upgrade
+sudo yum-config-manager --disable C7.7.1908
 sudo yum -y install git
 
 #instalando servidor apache centOS 7
