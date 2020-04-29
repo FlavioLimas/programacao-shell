@@ -10,7 +10,7 @@ sudo echo "LANG="pt_BR.UTF-8"" > /etc/locale.conf
 # Comandos para fazer o update no centos ao subir a VM no vagrant
 sudo dhclient
 sudo yum -y update
-sudo yum-config-manager --add-repo http://vault.centos.org/7.7.1908/os/Source/repodata/repomd.xml
+sudo yum-config-manager --disable vault.centos.org_7.7.1908_os_Source_repodata_repomd.xml
 sudo yum -y install dnf
 sudo dnf clean all
 sudo rm -r /var/cache/dnf
